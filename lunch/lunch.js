@@ -15,4 +15,4 @@ function whatToDoForLunch(hungry, availableTime) {
 }
 whatToDoForLunch(true, 20)
 whatToDoForLunch(true, 50)
-whatToDoForLunch(false, 30);
+whatToDoForLunch(false, 30)
