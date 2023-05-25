@@ -11,3 +11,4 @@ console.log(pigLatinWords.join(' '));
 const translateToPigLatin = function(word) {
   return word.slice(1, word.length) + word[0] + "ay";
 };
+
