@@ -1,15 +1,14 @@
 // trying to see if this works
-const numDice = parseInt(process.argv[2]);
 
-if (isNaN(numDice) || numDice <= 0) {
-  console.log("Invalid input. Please provide a positive integer.");
-} else {
-  const results = [];
+const diceRoller = function(totalDice) {
+  let result = [];
+  for (let i = 0; i < totalDice; i++) {
+    let diceResult = Math.floor(Math.random() * 6) + 1; // how to randomize number (builtin jvscript)
+    result.push(diceResult);
 
-  for (let i = 0; i < numDice; i++) {
-    const roll = Math.floor(Math.random() * 6) + 1;
-    results.push(roll);
+
   }
+  return (result.join());
+};
 
-  console.log(`Rolled ${numDice} dice: ${results.join(", ")}`);
-}
+console.log(diceRoller(11));
